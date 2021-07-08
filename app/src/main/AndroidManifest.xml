@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.YourDreamBody">
-        <activity android:name=".gui.WorkoutTypesActivity"></activity>
+        <activity android:name=".gui.PushupActivity"></activity>
+        <activity android:name=".gui.ExcerciseActivity" />
+        <activity android:name=".gui.WorkoutTypesActivity" />
         <activity android:name=".gui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

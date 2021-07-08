@@ -9,19 +9,27 @@ import android.widget.Button;
 
 import com.example.yourdreambody.R;
 
-public class WorkoutTypesActivity extends Activity {
-    Button submit;
+public class PushupActivity extends Activity {
+
     Intent intent;
+    Button next;
+    Button stop;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_workout_types);
+        setContentView(R.layout.activity_pushup);
 
-        submit = findViewById(R.id.submitButton);
+
         intent = new Intent(this, WorkoutActivity.class);
+        next = findViewById(R.id.nextButton1);
+        stop = findViewById(R.id.stopButton1);
 
-        submit.setOnClickListener(v -> {
+        next.setOnClickListener(v -> {
+            startActivity(intent);
+        });
+
+        stop.setOnClickListener(v -> {
             startActivity(intent);
         });
     }
