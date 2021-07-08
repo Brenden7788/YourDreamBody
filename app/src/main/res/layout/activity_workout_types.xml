@@ -109,10 +109,10 @@
         android:id="@+id/minus1"
         android:layout_width="45dp"
         android:layout_height="40dp"
-        android:layout_marginTop="31dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="28dp"
         android:text="-"
         android:textSize="12dp"
-        app:layout_constraintEnd_toStartOf="@+id/pushCounter"
         app:layout_constraintStart_toEndOf="@+id/textView4"
         app:layout_constraintTop_toTopOf="@+id/textView2" />
 
@@ -120,10 +120,10 @@
         android:id="@+id/minus2"
         android:layout_width="45dp"
         android:layout_height="40dp"
+        android:layout_marginStart="56dp"
         android:layout_marginTop="88dp"
         android:text="-"
         android:textSize="12dp"
-        app:layout_constraintEnd_toStartOf="@+id/pushCounter"
         app:layout_constraintStart_toEndOf="@+id/textView4"
         app:layout_constraintTop_toTopOf="@+id/textView2" />
 
@@ -131,10 +131,10 @@
         android:id="@+id/minus3"
         android:layout_width="45dp"
         android:layout_height="40dp"
+        android:layout_marginStart="56dp"
         android:layout_marginTop="148dp"
         android:text="-"
         android:textSize="12dp"
-        app:layout_constraintEnd_toStartOf="@+id/pushCounter"
         app:layout_constraintStart_toEndOf="@+id/textView4"
         app:layout_constraintTop_toTopOf="@+id/textView2" />
 
@@ -142,10 +142,10 @@
         android:id="@+id/minus4"
         android:layout_width="45dp"
         android:layout_height="40dp"
+        android:layout_marginStart="56dp"
         android:layout_marginTop="212dp"
         android:text="-"
         android:textSize="12dp"
-        app:layout_constraintEnd_toStartOf="@+id/pushCounter"
         app:layout_constraintStart_toEndOf="@+id/textView4"
         app:layout_constraintTop_toTopOf="@+id/textView2" />
 
@@ -153,10 +153,10 @@
         android:id="@+id/minus5"
         android:layout_width="45dp"
         android:layout_height="40dp"
+        android:layout_marginStart="56dp"
         android:layout_marginTop="268dp"
         android:text="-"
         android:textSize="12dp"
-        app:layout_constraintEnd_toStartOf="@+id/pushCounter"
         app:layout_constraintStart_toEndOf="@+id/textView4"
         app:layout_constraintTop_toTopOf="@+id/textView2" />
 
@@ -164,10 +164,10 @@
         android:id="@+id/minus6"
         android:layout_width="45dp"
         android:layout_height="40dp"
+        android:layout_marginStart="56dp"
         android:layout_marginTop="332dp"
         android:text="-"
         android:textSize="12dp"
-        app:layout_constraintEnd_toStartOf="@+id/pushCounter"
         app:layout_constraintStart_toEndOf="@+id/textView4"
         app:layout_constraintTop_toTopOf="@+id/textView2" />
 
@@ -175,10 +175,10 @@
         android:id="@+id/minus7"
         android:layout_width="45dp"
         android:layout_height="40dp"
+        android:layout_marginStart="56dp"
         android:layout_marginTop="388dp"
         android:text="-"
         android:textSize="12dp"
-        app:layout_constraintEnd_toStartOf="@+id/pushCounter"
         app:layout_constraintStart_toEndOf="@+id/textView4"
         app:layout_constraintTop_toTopOf="@+id/textView2" />
 
@@ -186,10 +186,10 @@
         android:id="@+id/minus8"
         android:layout_width="45dp"
         android:layout_height="40dp"
+        android:layout_marginStart="56dp"
         android:layout_marginTop="448dp"
         android:text="-"
         android:textSize="12dp"
-        app:layout_constraintEnd_toStartOf="@+id/pushCounter"
         app:layout_constraintStart_toEndOf="@+id/textView4"
         app:layout_constraintTop_toTopOf="@+id/textView2" />
 
@@ -197,10 +197,10 @@
         android:id="@+id/minus9"
         android:layout_width="45dp"
         android:layout_height="40dp"
+        android:layout_marginStart="56dp"
         android:layout_marginTop="508dp"
         android:text="-"
         android:textSize="12dp"
-        app:layout_constraintEnd_toStartOf="@+id/pushCounter"
         app:layout_constraintStart_toEndOf="@+id/textView4"
         app:layout_constraintTop_toTopOf="@+id/textView2" />
 
@@ -208,33 +208,22 @@
         android:id="@+id/plus1"
         android:layout_width="45dp"
         android:layout_height="40dp"
-        android:layout_marginTop="31dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="68dp"
         android:text="+"
         android:textSize="12dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/pushCounter"
-        app:layout_constraintTop_toTopOf="@+id/textView2" />
-
-    <Button
-        android:id="@+id/plus"
-        android:layout_width="45dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="88dp"
-        android:text="+"
-        android:textSize="12dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/pushCounter"
         app:layout_constraintTop_toTopOf="@+id/textView2" />
 
     <Button
         android:id="@+id/plus2"
         android:layout_width="45dp"
         android:layout_height="40dp"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="68dp"
         android:text="+"
         android:textSize="12dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/pushCounter"
         app:layout_constraintTop_toTopOf="@+id/textView2" />
 
     <Button
@@ -242,10 +231,10 @@
         android:layout_width="45dp"
         android:layout_height="40dp"
         android:layout_marginTop="148dp"
+        android:layout_marginEnd="68dp"
         android:text="+"
         android:textSize="12dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/pushCounter"
         app:layout_constraintTop_toTopOf="@+id/textView2" />
 
     <Button
@@ -253,10 +242,10 @@
         android:layout_width="45dp"
         android:layout_height="40dp"
         android:layout_marginTop="212dp"
+        android:layout_marginEnd="68dp"
         android:text="+"
         android:textSize="12dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/pushCounter"
         app:layout_constraintTop_toTopOf="@+id/textView2" />
 
     <Button
@@ -264,10 +253,10 @@
         android:layout_width="45dp"
         android:layout_height="40dp"
         android:layout_marginTop="268dp"
+        android:layout_marginEnd="68dp"
         android:text="+"
         android:textSize="12dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/pushCounter"
         app:layout_constraintTop_toTopOf="@+id/textView2" />
 
     <Button
@@ -275,10 +264,10 @@
         android:layout_width="45dp"
         android:layout_height="40dp"
         android:layout_marginTop="332dp"
+        android:layout_marginEnd="68dp"
         android:text="+"
         android:textSize="12dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/pushCounter"
         app:layout_constraintTop_toTopOf="@+id/textView2" />
 
     <Button
@@ -286,10 +275,10 @@
         android:layout_width="45dp"
         android:layout_height="40dp"
         android:layout_marginTop="388dp"
+        android:layout_marginEnd="68dp"
         android:text="+"
         android:textSize="12dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/pushCounter"
         app:layout_constraintTop_toTopOf="@+id/textView2" />
 
     <Button
@@ -297,10 +286,10 @@
         android:layout_width="45dp"
         android:layout_height="40dp"
         android:layout_marginTop="448dp"
+        android:layout_marginEnd="68dp"
         android:text="+"
         android:textSize="12dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/pushCounter"
         app:layout_constraintTop_toTopOf="@+id/textView2" />
 
     <Button
@@ -308,20 +297,10 @@
         android:layout_width="45dp"
         android:layout_height="40dp"
         android:layout_marginTop="508dp"
+        android:layout_marginEnd="68dp"
         android:text="+"
         android:textSize="12dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/pushCounter"
-        app:layout_constraintTop_toTopOf="@+id/textView2" />
-
-    <TextView
-        android:id="@+id/pushCounter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="0"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView4"
         app:layout_constraintTop_toTopOf="@+id/textView2" />
 
     <TextView
@@ -335,35 +314,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/pushCounter3"
+        android:id="@+id/pushCount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:text="0"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toTopOf="@+id/textView2" />
-
-    <Button
-        android:id="@+id/minus12"
-        android:layout_width="45dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="31dp"
-        android:text="-"
-        android:textSize="12dp"
-        app:layout_constraintEnd_toStartOf="@+id/pushCounter"
-        app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toTopOf="@+id/textView2" />
-
-    <Button
-        android:id="@+id/plus10"
-        android:layout_width="45dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="31dp"
-        android:text="+"
-        android:textSize="12dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/pushCounter"
         app:layout_constraintTop_toTopOf="@+id/textView2" />
 
     <TextView
