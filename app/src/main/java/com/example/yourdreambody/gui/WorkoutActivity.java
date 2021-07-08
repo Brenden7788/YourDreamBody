@@ -13,6 +13,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.yourdreambody.R;
 import com.example.yourdreambody.model.Workout;
 
+import java.util.ArrayList;
+
 public class WorkoutActivity extends Activity {
     Intent intent;
     Intent intent1;
@@ -20,9 +22,11 @@ public class WorkoutActivity extends Activity {
     Button newButton;
     ListView workoutList;
     Workout workout;
+    ArrayList<Workout> workouts;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.workout_activity);
 
