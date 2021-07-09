@@ -27,6 +27,7 @@
             android:text="Workout" />
 
         <ListView
+            android:id="@+id/workoutlist"
             android:layout_width="match_parent"
             android:layout_height="562dp" />
 

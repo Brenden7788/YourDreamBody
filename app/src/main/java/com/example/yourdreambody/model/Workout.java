@@ -1,20 +1,24 @@
 package com.example.yourdreambody.model;
 
-public class Workout {
-    int pushup;
-    int squats;
-    int jumpingjack;
-    int situp;
-    int burpees;
-    int plank;
-    int mountainclimber;
-    int crunches;
-    int skipping;
+import java.io.Serializable;
+
+public class Workout implements Serializable {
+    private String name;
+    private int pushup;
+    private int squats;
+    private int jumpingjack;
+    private int situp;
+    private int burpees;
+    private int plank;
+    private int mountainclimber;
+    private int crunches;
+    private int skipping;
 
     public Workout() {
     }
 
-    public Workout(int pushup, int squats, int jumpingjack, int situp, int burpees, int plank, int mountainclimber, int crunches, int skipping) {
+    public Workout(String name, int pushup, int squats, int jumpingjack, int situp, int burpees, int plank, int mountainclimber, int crunches, int skipping) {
+        this.name = name;
         this.pushup = pushup;
         this.squats = squats;
         this.jumpingjack = jumpingjack;
@@ -24,6 +28,14 @@ public class Workout {
         this.mountainclimber = mountainclimber;
         this.crunches = crunches;
         this.skipping = skipping;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getPushup() {

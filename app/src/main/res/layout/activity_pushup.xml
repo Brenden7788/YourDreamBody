@@ -23,7 +23,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/excercise"
+            android:id="@+id/excercisepush"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TextView "
@@ -37,21 +37,22 @@
             android:id="@+id/nextButton1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="64dp"
             android:text="next"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/stopButton"
-            app:layout_constraintTop_toBottomOf="@+id/excercise" />
+            app:layout_constraintTop_toBottomOf="@+id/excercisepush" />
 
         <Button
             android:id="@+id/stopButton1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="96dp"
+            android:layout_marginStart="52dp"
             android:text="stop"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/excercise" />
+            app:layout_constraintTop_toBottomOf="@+id/excercisepush" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView

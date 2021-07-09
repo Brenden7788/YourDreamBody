@@ -2,11 +2,15 @@ package com.example.yourdreambody.gui;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import com.example.yourdreambody.R;
+import com.example.yourdreambody.model.Workout;
 
 public class WorkoutTypesActivity extends Activity {
     Button submit;
@@ -47,6 +51,9 @@ public class WorkoutTypesActivity extends Activity {
     Integer mountainCounter1 = 0;
     Integer crunchesCounter1 = 0;
     Integer skippingCounter1 = 0;
+    EditText etName;
+    String name;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -89,9 +96,28 @@ public class WorkoutTypesActivity extends Activity {
         crunchesCounter = findViewById(R.id.crunchesCounter);
         skippingCounter = findViewById(R.id.skippingCounter);
 
+        etName = findViewById(R.id.editTextTextWorkoutName);
+        name = etName.getText().toString();
+
         //intent
         submit.setOnClickListener(v -> {
+            name = etName.getText().toString();
+
+            intent.putExtra("name", name);
+            intent.putExtra("pushup", pushCounter1);
+            intent.putExtra("squat", squatCounter1);
+            intent.putExtra("jumping", jumpingCounter1);
+            intent.putExtra("situp", sittupCounter1);
+            intent.putExtra("buerpee", buerpeeCounter1);
+            intent.putExtra("plank", plankCounter1);
+            intent.putExtra("mountain", mountainCounter1);
+            intent.putExtra("crunches", crunchesCounter1);
+            intent.putExtra("skipping", skippingCounter1);
+
             startActivity(intent);
+
+          /*  WorkoutActivity.addWorkout(new Workout(name, pushCounter1, squatCounter1,jumpingCounter1,sittupCounter1,buerpeeCounter1,plankCounter1, mountainCounter1, crunchesCounter1, skippingCounter1));
+            finish();*/
         });
 
         //pushups
@@ -194,8 +220,10 @@ public class WorkoutTypesActivity extends Activity {
 
 
     }
+
+
     //refresh labels
-    public void refresh(){
+    public void refresh() {
         pushCounter.setText(pushCounter1.toString());
         squatCounter.setText(squatCounter1.toString());
         jumpingCounter.setText(jumpingCounter1.toString());

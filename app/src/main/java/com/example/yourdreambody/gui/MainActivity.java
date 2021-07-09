@@ -9,8 +9,8 @@ import android.widget.Button;
 import com.example.yourdreambody.R;
 
 public class MainActivity extends AppCompatActivity {
-    Intent intent;
-    Button startButton;
+    private Intent intent;
+    private Button startButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
